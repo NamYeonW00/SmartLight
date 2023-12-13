@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RoomActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <include layout="@layout/view_small_logo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="연결된 기기"
+            android:textAppearance="?attr/textAppearanceBody2" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="#eeeeee"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="0dp"
+            app:cardMaxElevation="0dp">
+
+            <TextView
+                android:id="@+id/connected_device_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textAppearance="?attr/textAppearanceBody1"
+                tools:text="연결된 기기 없음" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="연결 설정"
+            android:textAppearance="?attr/textAppearanceBody2" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/connection_settings_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true" />
+
+        <TextView
+            android:id="@+id/status_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:textAppearance="?attr/textAppearanceBody1"
+            tools:text="현재 당신의 기기는 거실에 연결되어 있습니다." />
+
+        <TextView
+            android:id="@+id/light_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="밝기 조절"
+            android:textAppearance="?attr/textAppearanceBody1" />
+
+        <abak.tr.com.boxedverticalseekbar.BoxedVertical
+            android:id="@+id/boxed_vertical"
+            android:layout_width="96dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            app:backgroundColor="#eeeeee"
+            app:defaultValue="1"
+            app:imageEnabled="false"
+            app:libCornerRadius="36"
+            app:max="5"
+            app:progressColor="#c2c2c2"
+            app:step="1"
+            app:textBottomPadding="20"
+            app:textColor="@android:color/transparent"
+            app:textEnabled="true"
+            app:touchDisabled="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="현재 밝기"
+            android:textAppearance="?attr/textAppearanceBody1" />
+
+        <TextView
+            android:id="@+id/current_level_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:text="Level 1"
+            android:textAppearance="?attr/textAppearanceBody1" />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/img_power" />
+
+    </LinearLayout>
+
+</LinearLayout>

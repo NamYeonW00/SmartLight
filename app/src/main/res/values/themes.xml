@@ -1,0 +1,18 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.SmartLight" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#141a75</item>
+        <item name="colorPrimaryVariant">#141a75</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#f6c85b</item>
+        <item name="colorSecondaryVariant">#f6c85b</item>
+        <item name="colorOnSecondary">#141a75</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="fontFamily">@font/bmjua</item>
+        <item name="android:fontFamily">@font/bmjua</item>
+    </style>
+</resources>
