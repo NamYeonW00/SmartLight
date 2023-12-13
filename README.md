@@ -1,0 +1,2 @@
+# SmartLight
+SmartLight Team Project
